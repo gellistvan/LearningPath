@@ -1,0 +1,5 @@
+add_subdirectory(2_1_qt_core)
+add_subdirectory(2_2_object_mapping)
+add_subdirectory(2_3_signals_and_slots)
+add_subdirectory(2_4_memory_management)
+add_subdirectory(2_5_file_handling)
