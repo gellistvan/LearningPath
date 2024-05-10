@@ -5,7 +5,7 @@ project(MyProject)
 set(CMAKE_CXX_STANDARD 20)
 
 # Find packages
-find_package(Qt5 COMPONENTS Widgets Core Gui REQUIRED)
+find_package(Qt5 COMPONENTS Widgets Core Gui Qml Quick REQUIRED)
 find_package(OpenCV REQUIRED)
 
 # Include directories
