@@ -1,0 +1,5 @@
+add_subdirectory(01_introduction)
+add_subdirectory(02_main_window_and_dialogs)
+add_subdirectory(03_layout_management)
+add_subdirectory(04_event_handling_in_widgets)
+add_subdirectory(05_model_view_programming)
