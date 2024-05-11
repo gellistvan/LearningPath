@@ -1,0 +1,1 @@
+add_executable(10_unique_shared_and_weak_ptr 10_unique_shared_and_weak_ptr.cpp)

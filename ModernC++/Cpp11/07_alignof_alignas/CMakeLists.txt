@@ -1,0 +1,1 @@
+add_executable(07_alignof_alignas 07_alignof_alignas.cpp)

@@ -1,0 +1,1 @@
+add_executable(32_sorted 32_sorted.cpp)

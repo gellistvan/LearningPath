@@ -1,0 +1,1 @@
+add_executable(26_move_iterator 26_move_iterator.cpp)

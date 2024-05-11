@@ -1,0 +1,1 @@
+add_executable(21_thread 21_thread.cpp)

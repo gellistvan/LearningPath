@@ -1,0 +1,1 @@
+add_executable(17_ratio 17_ratio.cpp)

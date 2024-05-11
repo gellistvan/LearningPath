@@ -1,0 +1,1 @@
+add_executable(08_multithreaded_memory_model 08_multithreaded_memory_model.cpp)

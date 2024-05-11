@@ -1,0 +1,1 @@
+add_executable(02_constexpr_and_literals 02_constexpr_and_literals.cpp)

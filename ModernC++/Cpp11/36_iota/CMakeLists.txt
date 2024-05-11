@@ -1,0 +1,1 @@
+add_executable(36_iota 36_iota.cpp)

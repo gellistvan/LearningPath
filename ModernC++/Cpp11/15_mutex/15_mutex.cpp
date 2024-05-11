@@ -22,8 +22,8 @@ void worker(int id) {
 
     // Using std::recursive_mutex
     {
-        std::lock(rec_mtx);
-        std::lock(rec_mtx); // Recursive lock
+        rec_mtx.lock();
+        rec_mtx.lock(); // Recursive lock
         std::cout << "Worker " << id << " has entered recursive section." << std::endl;
         rec_mtx.unlock();
         rec_mtx.unlock();

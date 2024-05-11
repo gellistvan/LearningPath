@@ -1,0 +1,1 @@
+add_executable(23_metaprogramming_library 23_metaprogramming_library.cpp)

@@ -1,0 +1,2 @@
+add_executable(19_scoped_allocator 19_scoped_allocator.cpp)
+add_executable(19_scoped_allocator_adapter 19_scoped_allocator_adapter.cpp)

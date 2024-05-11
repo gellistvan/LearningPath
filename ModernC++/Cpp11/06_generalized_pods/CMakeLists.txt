@@ -1,0 +1,1 @@
+add_executable(06_generalized_pods 06_generalized_pods.cpp)

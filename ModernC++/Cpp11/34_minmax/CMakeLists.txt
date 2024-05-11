@@ -1,0 +1,1 @@
+add_executable(34_minmax 34_minmax.cpp)

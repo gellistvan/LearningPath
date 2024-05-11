@@ -1,0 +1,1 @@
+add_executable(25_emplace 25_emplace.cpp)

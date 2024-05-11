@@ -1,0 +1,1 @@
+add_executable(05_generalized_unions 05_generalized_unions.cpp)

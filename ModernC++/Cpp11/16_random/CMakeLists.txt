@@ -1,0 +1,1 @@
+add_executable(16_random 16_random.cpp)

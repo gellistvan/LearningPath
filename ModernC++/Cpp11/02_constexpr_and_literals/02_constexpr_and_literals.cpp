@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 // constexpr variable
 constexpr int max_size = 50;

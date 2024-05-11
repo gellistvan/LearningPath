@@ -1,0 +1,1 @@
+add_executable(09_std_function 09_std_function.cpp)

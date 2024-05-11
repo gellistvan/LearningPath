@@ -1,0 +1,1 @@
+add_executable(04_variadic_templates 04_variadic_templates.cpp)

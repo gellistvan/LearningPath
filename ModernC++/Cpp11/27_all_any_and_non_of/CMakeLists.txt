@@ -1,0 +1,1 @@
+add_executable(27_all_any_and_non_of 27_all_any_and_non_of.cpp)

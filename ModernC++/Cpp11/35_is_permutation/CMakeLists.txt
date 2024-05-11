@@ -1,0 +1,1 @@
+add_executable(35_is_permutation 35_is_permutation.cpp)

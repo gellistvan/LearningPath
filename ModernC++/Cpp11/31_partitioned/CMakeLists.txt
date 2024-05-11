@@ -1,0 +1,1 @@
+add_executable(31_partitioned 31_partitioned.cpp)

@@ -1,0 +1,1 @@
+add_executable(24_nordered_map_and_set 24_nordered_map_and_set.cpp)

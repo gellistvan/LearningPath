@@ -5,23 +5,25 @@ project(MyProject)
 set(CMAKE_CXX_STANDARD 20)
 
 # Find packages
-find_package(Qt5 COMPONENTS Widgets Core Gui Qml Quick REQUIRED)
+find_package(Qt5 COMPONENTS Widgets Core Gui REQUIRED)
+#find_package(Qt5 COMPONENTS Widgets Core Gui Qml Quick REQUIRED)
 find_package(OpenCV REQUIRED)
 
 # Include directories
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 # Enable automatic MOC, UIC, and RCC processing
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTOUIC ON)
-set(CMAKE_AUTORCC ON)
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
+#set(CMAKE_AUTOMOC ON)
+#set(CMAKE_AUTOUIC ON)
+#set(CMAKE_AUTORCC ON)
+#set(CMAKE_INCLUDE_CURRENT_DIR ON)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 
 include(common)
 # Define the executable
 add_executable(my_app OpenCV/main.cpp)
+add_subdirectory(ModernC++)
 add_subdirectory(Qt)
 
 # Use the Widgets module from Qt 5
