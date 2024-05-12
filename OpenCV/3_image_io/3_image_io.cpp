@@ -7,10 +7,17 @@ void on_trackbar(int, void*) {
     std::cout << "Slider value: " << slider_value << std::endl;
 }
 
+#ifndef RESOURCES_PATH
+#define RESOURCES_PATH "Undefined"
+#endif
+
 int main() {
     // 3.1 Reading an Image
-    std::string image_path = "path/to/image.jpg"; // Update the path accordingly
-    cv::Mat image = cv::imread(image_path, cv::IMREAD_GRAYSCALE);
+
+    std::string resources_path = RESOURCES_PATH;
+    std::string image_path = resources_path + "OpenCV/lenna.jpg"; // Update the path accordingly
+    std::cout << image_path <<std::endl;
+    cv::Mat image = cv::imread(image_path, cv::IMREAD_COLOR);
     if (image.empty()) {
         std::cerr << "Could not read the image" << std::endl;
         return 1;

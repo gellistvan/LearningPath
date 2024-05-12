@@ -12,20 +12,29 @@ find_package(OpenCV REQUIRED)
 # Include directories
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-# Enable automatic MOC, UIC, and RCC processing
-#set(CMAKE_AUTOMOC ON)
-#set(CMAKE_AUTOUIC ON)
-#set(CMAKE_AUTORCC ON)
-#set(CMAKE_INCLUDE_CURRENT_DIR ON)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+#set(ENV{RESOURCES_PATH} "${CMAKE_SOURCE_DIR}/resources/")
+add_definitions(-DRESOURCES_PATH="${CMAKE_SOURCE_DIR}/resources/")
 
 
-include(common)
+message(STATUS INFO ENV{RESOURCES_PATH})
+
+option(BUILD_CPP_11 "Build C++11 examples" ON)
+option(BUILD_QT "Build Qt examples" ON)
+option(BUILD_OPEN_CV "Build OpenCV examples" ON)
+
 # Define the executable
-add_executable(my_app OpenCV/main.cpp)
 add_subdirectory(ModernC++)
-add_subdirectory(Qt)
+
+if(BUILD_QT)
+    add_subdirectory(Qt)
+endif ()
+
+if(BUILD_OPEN_CV)
+    add_subdirectory(OpenCV)
+endif ()
 
 # Use the Widgets module from Qt 5
+add_executable(my_app OpenCV/main.cpp)
 target_link_libraries(my_app Qt5::Widgets Qt5::Core Qt5::Gui ${OpenCV_LIBS})
 #target_link_libraries(hello_word Qt5::Widgets Qt5::Core Qt5::Gui)

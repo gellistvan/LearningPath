@@ -1,0 +1,6 @@
+include(common)
+add_opencv_executable(4_1_bluring_smoothing "4_1_bluring_smoothing.cpp")
+add_opencv_executable(4_2_edge_detection "4_2_edge_detection.cpp")
+add_opencv_executable(4_3_morphology "4_3_morphology.cpp")
+add_opencv_executable(4_4_custom_kernel "4_4_custom_kernel.cpp")
+add_opencv_executable(4_5_video_processing "4_5_video_processing.cpp")

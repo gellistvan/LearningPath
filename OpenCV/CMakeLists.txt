@@ -1,0 +1,7 @@
+add_subdirectory(1_core_data_structures)
+add_subdirectory(2_video_processing)
+add_subdirectory(3_image_io)
+add_subdirectory(4_filters)
+#add_subdirectory(5_transformations)
+#add_subdirectory(6_image_analysis)
+#add_subdirectory(7_putting_all_together)

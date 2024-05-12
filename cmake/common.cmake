@@ -10,3 +10,9 @@ macro(add_qt_executable name sources)
     message("=== Defined binary: ${name} ===")
 
 endmacro()
+
+macro(add_opencv_executable name sources)
+    add_executable(${name} ${sources})
+    target_link_libraries(${name} ${OpenCV_LIBS})
+    message("=== Defined binary: ${name} ===")
+endmacro()
